@@ -667,7 +667,11 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.viewport.WindowsPhone": [
     "Ext.viewport.WP"
   ],
-  "MyMusicBox.view.MainView": []
+  "MyMusicBox.model.Artist": [],
+  "MyMusicBox.model.ArtistCategory": [],
+  "MyMusicBox.store.ArtistCategory": [],
+  "MyMusicBox.view.MainView": [],
+  "MyMusicBox.view.SingerView": []
 });
 
 Ext.ClassManager.addNameAliasMappings({
@@ -1399,7 +1403,13 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.Ios": [],
   "Ext.viewport.Viewport": [],
   "Ext.viewport.WindowsPhone": [],
-  "MyMusicBox.view.MainView": []
+  "MyMusicBox.model.Artist": [],
+  "MyMusicBox.model.ArtistCategory": [],
+  "MyMusicBox.store.ArtistCategory": [],
+  "MyMusicBox.view.MainView": [],
+  "MyMusicBox.view.SingerView": [
+    "widget.singerView"
+  ]
 });
 
 

@@ -1,0 +1,29 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "data": [
+            "[{id: 0 , text: '全部歌手'},",
+            "{id: 1 , text: '华语男歌手'},",
+            "{id: 2 , text: '华语女歌手'},",
+            "{id: 3 , text: '华语乐队组合'},",
+            "{id: 4 , text: '欧美男歌手'},",
+            "{id: 5 , text: '欧美女歌手'},",
+            "{id: 6 , text: '欧美乐队组合'},",
+            "{id: 7 , text: '日韩男歌手'},",
+            "{id: 8 , text: '日韩女歌手'},",
+            "{id: 9 , text: '日韩乐队组合'},",
+            "{id: 10 , text: '其他歌手'}]"
+        ],
+        "designer|userClassName": "ArtistCategory",
+        "model": "ArtistCategory",
+        "storeId": "ArtistCategory"
+    },
+    "name": "MyStore",
+    "designerId": "a3280b39-919b-4c6e-a3f5-7fed9039d56d"
+}

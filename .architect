@@ -5,7 +5,7 @@
             "id": "6ff421e4-b183-4a75-a035-b579678217fa",
             "cn": [
                 {
-                    "id": "11683103-9560-4063-a3c4-5e9b28a5f36c"
+                    "id": "2e709c2f-08f5-4de2-9f7e-9e666097ec27"
                 },
                 {
                     "id": "7148fb0a-516c-4a93-9c4d-c35ecaeecb34"
@@ -21,8 +21,46 @@
                 }
             ]
         },
+        "e6a19c9c-94fb-440f-9943-abe93bcf1397": {
+            "id": "e6a19c9c-94fb-440f-9943-abe93bcf1397",
+            "cn": [
+                {
+                    "id": "9e9abc7b-1f50-4392-8e7e-de9a05f3de7c",
+                    "cn": [
+                        {
+                            "id": "d82a8ed9-23d3-49d2-8bef-1715707c0152"
+                        }
+                    ]
+                }
+            ]
+        },
         "store": true,
+        "a3280b39-919b-4c6e-a3f5-7fed9039d56d": {
+            "id": "a3280b39-919b-4c6e-a3f5-7fed9039d56d"
+        },
         "model": true,
+        "f330cfc4-6fe0-4c50-bd9c-7c775a49c54d": {
+            "id": "f330cfc4-6fe0-4c50-bd9c-7c775a49c54d",
+            "cn": [
+                {
+                    "id": "8b7f7716-0bf9-4253-b9b3-5d5519af3c0c"
+                },
+                {
+                    "id": "32353c69-80d8-48bc-9d95-baa32bafb4b5"
+                }
+            ]
+        },
+        "1862dc60-8be0-4b57-9275-96282ab9d92e": {
+            "id": "1862dc60-8be0-4b57-9275-96282ab9d92e",
+            "cn": [
+                {
+                    "id": "d64eec06-be77-4fd1-87bc-bfb691f5ffa2"
+                },
+                {
+                    "id": "895268d7-7134-49c7-b2c6-da1c1f300dfe"
+                }
+            ]
+        },
         "controller": true,
         "resource": true,
         "70760bbc-9363-4de6-bb8d-935eb11d0b3e": {
@@ -35,7 +73,11 @@
     "tabState": {
         "openTabs": [
             "application",
-            "6ff421e4-b183-4a75-a035-b579678217fa"
+            "6ff421e4-b183-4a75-a035-b579678217fa",
+            "e6a19c9c-94fb-440f-9943-abe93bcf1397",
+            "a3280b39-919b-4c6e-a3f5-7fed9039d56d",
+            "f330cfc4-6fe0-4c50-bd9c-7c775a49c54d",
+            "1862dc60-8be0-4b57-9275-96282ab9d92e"
         ]
     },
     "canvasState": {
@@ -45,7 +87,7 @@
         "topInstance": null,
         "selectedInstance": null
     },
-    "editMode": "design",
+    "editMode": "code",
     "userSettings": {
         "no-cmd": false
     }

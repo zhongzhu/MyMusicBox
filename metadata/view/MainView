@@ -13,19 +13,19 @@
     "designerId": "6ff421e4-b183-4a75-a035-b579678217fa",
     "cn": [
         {
-            "type": "Ext.Container",
+            "type": "linkedinstance",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "iconCls": "info",
-                "itemId": "tab1",
+                "iconCls": "user",
                 "title": "歌手"
             },
-            "name": "MyContainer",
-            "designerId": "11683103-9560-4063-a3c4-5e9b28a5f36c"
+            "name": "singerview",
+            "designerId": "2e709c2f-08f5-4de2-9f7e-9e666097ec27",
+            "masterInstanceId": "e6a19c9c-94fb-440f-9943-abe93bcf1397"
         },
         {
             "type": "Ext.Container",

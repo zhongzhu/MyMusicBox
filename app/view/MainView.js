@@ -17,6 +17,8 @@ Ext.define('MyMusicBox.view.MainView', {
     extend: 'Ext.tab.Panel',
 
     requires: [
+        'MyMusicBox.view.SingerView',
+        'Ext.navigation.View',
         'Ext.tab.Bar'
     ],
 
@@ -24,10 +26,9 @@ Ext.define('MyMusicBox.view.MainView', {
         itemId: 'mainView',
         items: [
             {
-                xtype: 'container',
+                xtype: 'singerView',
                 title: '歌手',
-                iconCls: 'info',
-                itemId: 'tab1'
+                iconCls: 'user'
             },
             {
                 xtype: 'container',

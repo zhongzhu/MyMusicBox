@@ -6,9 +6,17 @@
     },
     "codeClass": null,
     "userConfig": {
+        "models": [
+            "ArtistCategory",
+            "Artist"
+        ],
         "name": "MyMusicBox",
+        "stores": [
+            "ArtistCategory"
+        ],
         "views": [
-            "MainView"
+            "MainView",
+            "SingerView"
         ]
     },
     "name": "Application",
