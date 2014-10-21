@@ -1,0 +1,88 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userClassName": "MainView",
+        "itemId": "mainView"
+    },
+    "designerId": "6ff421e4-b183-4a75-a035-b579678217fa",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "iconCls": "info",
+                "itemId": "tab1",
+                "title": "歌手"
+            },
+            "name": "MyContainer",
+            "designerId": "11683103-9560-4063-a3c4-5e9b28a5f36c"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "iconCls": "info",
+                "itemId": "tab2",
+                "title": "分类"
+            },
+            "name": "MyContainer1",
+            "designerId": "7148fb0a-516c-4a93-9c4d-c35ecaeecb34"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "iconCls": "info",
+                "itemId": "tab3",
+                "title": "播放列表"
+            },
+            "name": "MyContainer2",
+            "designerId": "1a31a091-9dd3-42e8-9fea-1f1b9538b758"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "iconCls": "info",
+                "title": "播放"
+            },
+            "name": "MyContainer3",
+            "designerId": "2bff3cb8-257b-491b-ac48-6aa52ee344d3"
+        },
+        {
+            "type": "Ext.tab.Bar",
+            "reference": {
+                "name": "tabBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom"
+            },
+            "name": "MyTabBar",
+            "designerId": "74129f5c-533c-4825-ba11-7207fb0e7c8f"
+        }
+    ]
+}
