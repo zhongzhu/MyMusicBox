@@ -1,5 +1,5 @@
 {
-    "type": "Ext.data.Store",
+    "type": "jsonstore",
     "reference": {
         "name": "items",
         "type": "array"
@@ -7,23 +7,40 @@
     "codeClass": null,
     "userConfig": {
         "autoLoad": true,
-        "data": [
-            "[{id: 0 , text: '全部歌手'},",
-            "{id: 1 , text: '华语男歌手'},",
-            "{id: 2 , text: '华语女歌手'},",
-            "{id: 3 , text: '华语乐队组合'},",
-            "{id: 4 , text: '欧美男歌手'},",
-            "{id: 5 , text: '欧美女歌手'},",
-            "{id: 6 , text: '欧美乐队组合'},",
-            "{id: 7 , text: '日韩男歌手'},",
-            "{id: 8 , text: '日韩女歌手'},",
-            "{id: 9 , text: '日韩乐队组合'},",
-            "{id: 10 , text: '其他歌手'}]"
-        ],
         "designer|userClassName": "ArtistCategory",
         "model": "ArtistCategory",
         "storeId": "ArtistCategory"
     },
-    "name": "MyStore",
-    "designerId": "a3280b39-919b-4c6e-a3f5-7fed9039d56d"
+    "name": "MyJsonStore",
+    "designerId": "b5745414-f4fa-48a9-9eb4-027ffe06884e",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "php/artist_category.php"
+            },
+            "name": "MyAjaxProxy",
+            "designerId": "caa299bf-f839-4764-a825-304856637c14",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "data"
+                    },
+                    "name": "MyJsonReader",
+                    "designerId": "9b7aaaa7-468b-4f99-8f5c-51ed227e960d"
+                }
+            ]
+        }
+    ]
 }

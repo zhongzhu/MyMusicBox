@@ -37,6 +37,20 @@
             },
             "name": "field3",
             "designerId": "895268d7-7134-49c7-b2c6-da1c1f300dfe"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "artist_category_id",
+                "type": "int"
+            },
+            "name": "field4",
+            "designerId": "95b35d0a-2beb-4bfd-ace3-497f2d4fc787"
         }
     ]
 }

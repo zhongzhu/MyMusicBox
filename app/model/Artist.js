@@ -28,6 +28,10 @@ Ext.define('MyMusicBox.model.Artist', {
             },
             {
                 name: 'name'
+            },
+            {
+                name: 'artist_category_id',
+                type: 'int'
             }
         ]
     }

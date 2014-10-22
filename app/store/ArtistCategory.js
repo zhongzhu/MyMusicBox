@@ -17,58 +17,22 @@ Ext.define('MyMusicBox.store.ArtistCategory', {
     extend: 'Ext.data.Store',
 
     requires: [
-        'MyMusicBox.model.ArtistCategory'
+        'MyMusicBox.model.ArtistCategory',
+        'Ext.data.proxy.Ajax',
+        'Ext.data.reader.Json'
     ],
 
     config: {
         autoLoad: true,
-        data: [
-            {
-                id: 0,
-                text: '全部歌手'
-            },
-            {
-                id: 1,
-                text: '华语男歌手'
-            },
-            {
-                id: 2,
-                text: '华语女歌手'
-            },
-            {
-                id: 3,
-                text: '华语乐队组合'
-            },
-            {
-                id: 4,
-                text: '欧美男歌手'
-            },
-            {
-                id: 5,
-                text: '欧美女歌手'
-            },
-            {
-                id: 6,
-                text: '欧美乐队组合'
-            },
-            {
-                id: 7,
-                text: '日韩男歌手'
-            },
-            {
-                id: 8,
-                text: '日韩女歌手'
-            },
-            {
-                id: 9,
-                text: '日韩乐队组合'
-            },
-            {
-                id: 10,
-                text: '其他歌手'
-            }
-        ],
         model: 'MyMusicBox.model.ArtistCategory',
-        storeId: 'ArtistCategory'
+        storeId: 'ArtistCategory',
+        proxy: {
+            type: 'ajax',
+            url: 'php/artist_category.php',
+            reader: {
+                type: 'json',
+                rootProperty: 'data'
+            }
+        }
     }
 });
