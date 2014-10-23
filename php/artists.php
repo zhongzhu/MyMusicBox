@@ -40,7 +40,7 @@ $a10 = array(array('id'=>28, 'name'=>'Academy of St. Martin-in-the-Fields' , 'ar
 			array('id'=>29, 'name'=>'阿拉坦其其格扎格达苏荣' , 'artistcategory_id'=>10),
 			array('id'=>30, 'name'=>'阿廖' , 'artistcategory_id'=>10));
 
-$a0 = array($a1, $a2, $a3, $a4, $a5, $a6, $a7, $a8, $a9, $a10);
+$a0 = array_merge($a1, $a2, $a3, $a4, $a5, $a6, $a7, $a8, $a9, $a10);
 
 $artistcategory_id = 'a' . $_GET['id'];
 // echo $artistcategory_id;
@@ -51,7 +51,6 @@ $artistcategory_id = 'a' . $_GET['id'];
 //encoda para formato JSON
 echo json_encode(array(
 	"success" => true,
-	// "total" => 11,
-	// "data" => $a4));
+	"total" => count(${$artistcategory_id}),
 	"data" => ${$artistcategory_id}));
 ?>

@@ -17,8 +17,7 @@ Ext.define('MyMusicBox.controller.Singer', {
     extend: 'Ext.app.Controller',
 
     requires: [
-        'MyMusicBox.view.ArtistsView',
-        'MyMusicBox.view.MyFormPanel'
+        'MyMusicBox.view.ArtistsView'
     ],
 
     config: {

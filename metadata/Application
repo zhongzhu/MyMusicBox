@@ -20,8 +20,7 @@
         ],
         "views": [
             "MainView",
-            "ArtistsView",
-            "MyFormPanel"
+            "ArtistsView"
         ]
     },
     "name": "Application",

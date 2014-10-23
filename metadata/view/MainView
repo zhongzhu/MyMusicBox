@@ -72,7 +72,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "iconCls": "info",
+                "iconCls": "music",
                 "itemId": "tab2",
                 "title": "分类"
             },
@@ -87,7 +87,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "iconCls": "info",
+                "iconCls": "list",
                 "itemId": "tab3",
                 "title": "播放列表"
             },
@@ -102,7 +102,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "iconCls": "info",
+                "iconCls": "play",
                 "title": "播放"
             },
             "name": "MyContainer3",

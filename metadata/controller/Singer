@@ -8,8 +8,7 @@
     "userConfig": {
         "designer|userClassName": "Singer",
         "requires": [
-            "MyMusicBox.view.ArtistsView",
-            "MyMusicBox.view.MyFormPanel"
+            "MyMusicBox.view.ArtistsView"
         ]
     },
     "name": "MyController",

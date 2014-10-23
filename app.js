@@ -30,8 +30,7 @@ Ext.application({
     ],
     views: [
         'MainView',
-        'ArtistsView',
-        'MyFormPanel'
+        'ArtistsView'
     ],
     controllers: [
         'Singer'
