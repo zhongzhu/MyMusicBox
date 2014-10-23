@@ -6,17 +6,22 @@
     },
     "codeClass": null,
     "userConfig": {
+        "controllers": [
+            "Singer"
+        ],
         "models": [
             "ArtistCategory",
             "Artist"
         ],
         "name": "MyMusicBox",
         "stores": [
-            "ArtistCategory"
+            "ArtistCategory",
+            "Artists"
         ],
         "views": [
             "MainView",
-            "SingerView"
+            "ArtistsView",
+            "MyFormPanel"
         ]
     },
     "name": "Application",

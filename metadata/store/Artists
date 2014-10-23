@@ -1,0 +1,45 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Artists",
+        "model": "Artist",
+        "storeId": "Artists"
+    },
+    "name": "MyJsonStore",
+    "designerId": "1a05bbd6-ab27-403e-90c7-9a8fdcfb9e0d",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "php/artists.php"
+            },
+            "name": "MyAjaxProxy1",
+            "designerId": "0913a2e2-266f-42ab-86c7-4abf7b20ea4d",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "data"
+                    },
+                    "name": "MyJsonReader1",
+                    "designerId": "128709d9-c90c-4589-b4ee-1473bc2d58ca"
+                }
+            ]
+        }
+    ]
+}

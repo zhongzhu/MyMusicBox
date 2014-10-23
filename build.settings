@@ -1,0 +1,7 @@
+{
+    "webBuild": {
+        "environment": "production",
+        "clean": "on",
+        "publishPath": "C:/zhongzhu/repository/mymusicbox2/1"
+    }
+}

@@ -25,11 +25,16 @@ Ext.application({
         'Artist'
     ],
     stores: [
-        'ArtistCategory'
+        'ArtistCategory',
+        'Artists'
     ],
     views: [
         'MainView',
-        'SingerView'
+        'ArtistsView',
+        'MyFormPanel'
+    ],
+    controllers: [
+        'Singer'
     ],
     name: 'MyMusicBox',
 

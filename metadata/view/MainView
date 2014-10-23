@@ -7,25 +7,62 @@
     "codeClass": null,
     "userConfig": {
         "designer|initialView": true,
+        "designer|userAlias": "mainview",
         "designer|userClassName": "MainView",
-        "itemId": "mainView"
+        "itemId": null
     },
     "designerId": "6ff421e4-b183-4a75-a035-b579678217fa",
     "cn": [
         {
-            "type": "linkedinstance",
+            "type": "Ext.navigation.View",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
+                "autoDestroy": false,
                 "iconCls": "user",
+                "itemId": "singerNavView",
                 "title": "歌手"
             },
-            "name": "singerview",
-            "designerId": "2e709c2f-08f5-4de2-9f7e-9e666097ec27",
-            "masterInstanceId": "e6a19c9c-94fb-440f-9943-abe93bcf1397"
+            "name": "MyNavigationView",
+            "designerId": "e6a19c9c-94fb-440f-9943-abe93bcf1397",
+            "cn": [
+                {
+                    "type": "Ext.dataview.List",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "artistCategoryList",
+                        "store": "ArtistCategory",
+                        "title": "歌手类别"
+                    },
+                    "name": "MyList",
+                    "designerId": "9e9abc7b-1f50-4392-8e7e-de9a05f3de7c",
+                    "cn": [
+                        {
+                            "type": "Ext.XTemplate",
+                            "reference": {
+                                "name": "itemTpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "itemTpl",
+                                "implHandler": [
+                                    "<div>{text}</div>"
+                                ]
+                            },
+                            "name": "itemTpl",
+                            "designerId": "d82a8ed9-23d3-49d2-8bef-1715707c0152"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "type": "Ext.Container",

@@ -16,7 +16,7 @@
             "viewportOrientation": "portrait"
         },
         "urlPrefix": "http://localhost/MyMusicBox/",
-        "exportPath": "",
+        "exportPath": "C:/a",
         "spacesToIndent": 4,
         "sdkPath": "",
         "lineEnding": "CRLF",
@@ -26,7 +26,11 @@
         "generateArchitectVersion": true,
         "projectHasEnabledWebServer": false,
         "lockUrlPrefix": false,
-        "installStatus": "Not Installed"
+        "installStatus": "Not Installed",
+        "lastBuildSelection": {
+            "value": "webBuild",
+            "display": "Build web app"
+        }
     },
     "xdsVersion": "3.1.0",
     "xdsBuild": 1934,
@@ -36,12 +40,16 @@
     "viewOrderMap": {
         "view": [
             "6ff421e4-b183-4a75-a035-b579678217fa",
-            "e6a19c9c-94fb-440f-9943-abe93bcf1397"
+            "fbcb67c7-40dc-4e17-ae8f-a2142a4adacd",
+            "76995199-ed3f-4b75-a968-248a75ba8ae5"
         ],
         "store": [
-            "b5745414-f4fa-48a9-9eb4-027ffe06884e"
+            "b5745414-f4fa-48a9-9eb4-027ffe06884e",
+            "1a05bbd6-ab27-403e-90c7-9a8fdcfb9e0d"
         ],
-        "controller": [],
+        "controller": [
+            "ff0d33c9-e754-498c-9df9-ff39ab489c73"
+        ],
         "model": [
             "f330cfc4-6fe0-4c50-bd9c-7c775a49c54d",
             "1862dc60-8be0-4b57-9275-96282ab9d92e"

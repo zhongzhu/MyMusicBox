@@ -1,0 +1,64 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Singer",
+        "requires": [
+            "MyMusicBox.view.ArtistsView",
+            "MyMusicBox.view.MyFormPanel"
+        ]
+    },
+    "name": "MyController",
+    "designerId": "ff0d33c9-e754-498c-9df9-ff39ab489c73",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "singerNavView",
+                "selector": "mainview #singerNavView",
+                "xtype": null
+            },
+            "name": "singerNavView",
+            "designerId": "7856a412-3cc3-4080-8939-22ea9f71f657"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "mainview #singerNavView #artistCategoryList",
+                "designer|targetType": "Ext.dataview.List",
+                "fn": "onArtistCategoryListItemTap",
+                "implHandler": [
+                    "console.log(record.data);",
+                    "var store = Ext.getStore('Artists');",
+                    "store.getProxy().setExtraParams({id:record.get('id')});",
+                    "store.load();",
+                    "",
+                    "// var artistsView =",
+                    "this.getSingerNavView().push({",
+                    "    xtype: 'artistsview',",
+                    "    title: record.get('text'),",
+                    "    record: record",
+                    "});",
+                    ""
+                ],
+                "name": "itemtap"
+            },
+            "name": "onArtistCategoryListItemTap",
+            "designerId": "15b3b404-4fc5-47ad-af66-bb781ccc13f9"
+        }
+    ]
+}

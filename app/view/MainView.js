@@ -15,20 +15,34 @@
 
 Ext.define('MyMusicBox.view.MainView', {
     extend: 'Ext.tab.Panel',
+    alias: 'widget.mainview',
 
     requires: [
-        'MyMusicBox.view.SingerView',
         'Ext.navigation.View',
+        'Ext.dataview.List',
+        'Ext.XTemplate',
         'Ext.tab.Bar'
     ],
 
     config: {
-        itemId: 'mainView',
         items: [
             {
-                xtype: 'singerView',
+                xtype: 'navigationview',
                 title: '歌手',
-                iconCls: 'user'
+                iconCls: 'user',
+                itemId: 'singerNavView',
+                autoDestroy: false,
+                items: [
+                    {
+                        xtype: 'list',
+                        title: '歌手类别',
+                        itemId: 'artistCategoryList',
+                        itemTpl: [
+                            '<div>{text}</div>'
+                        ],
+                        store: 'ArtistCategory'
+                    }
+                ]
             },
             {
                 xtype: 'container',
