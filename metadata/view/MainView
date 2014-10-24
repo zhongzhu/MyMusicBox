@@ -65,19 +65,21 @@
             ]
         },
         {
-            "type": "Ext.Container",
+            "type": "Ext.dataview.NestedList",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
+                "detailCard": "SongsView",
                 "iconCls": "music",
-                "itemId": "tab2",
+                "itemId": "categoryView",
+                "store": "Categories",
                 "title": "分类"
             },
-            "name": "MyContainer1",
-            "designerId": "7148fb0a-516c-4a93-9c4d-c35ecaeecb34"
+            "name": "MyNestedList",
+            "designerId": "c86b6538-1f12-45a1-83b9-55c501cb86ba"
         },
         {
             "type": "Ext.dataview.List",
@@ -88,7 +90,7 @@
             "codeClass": null,
             "userConfig": {
                 "iconCls": "list",
-                "itemId": "playlistview",
+                "itemId": "playListView",
                 "store": "Playlist",
                 "title": "播放列表"
             },
@@ -114,20 +116,6 @@
             ]
         },
         {
-            "type": "Ext.Container",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "iconCls": "play",
-                "title": "播放"
-            },
-            "name": "MyContainer3",
-            "designerId": "2bff3cb8-257b-491b-ac48-6aa52ee344d3"
-        },
-        {
             "type": "Ext.tab.Bar",
             "reference": {
                 "name": "tabBar",
@@ -139,6 +127,21 @@
             },
             "name": "MyTabBar",
             "designerId": "74129f5c-533c-4825-ba11-7207fb0e7c8f"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "iconCls": "play",
+                "title": "播放"
+            },
+            "name": "playview",
+            "designerId": "9b59c19e-6ea7-41b6-acff-7cf8ad695e83",
+            "masterInstanceId": "dde9d466-bbd6-4ac5-9c0b-6ca35839e1d5"
         }
     ]
 }

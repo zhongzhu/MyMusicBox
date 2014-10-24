@@ -36,6 +36,9 @@ Ext.define('MyMusicBox.controller.Singer', {
             },
             "songsview": {
                 itemtap: 'onSongListItemTap'
+            },
+            "mainview #playListView": {
+                itemtap: 'onPlayListItemTap'
             }
         }
     },
@@ -46,7 +49,6 @@ Ext.define('MyMusicBox.controller.Singer', {
         store.getProxy().setExtraParams({id:record.get('id')});
         store.load();
 
-        // var artistsView =
         this.getSingerNavView().push({
             xtype: 'artistsview',
             title: record.get('text'),
@@ -83,10 +85,8 @@ Ext.define('MyMusicBox.controller.Singer', {
                                 if (store.find('original_id', songId) != -1) {
                                     Ext.Msg.alert('不需要重复添加', '你的播放列表已经添加过这首歌了。');
                                 } else {
-                                    var r = Ext.create('MyMusicBox.model.Playlist', d);
-                                    r.set('original_id', songId);
-                                    delete r.data.id;
-                                    store.add(r);
+                                    store.add({name:d.name, url:d.url, artist:d.artist,
+                                               artist_id:d.artist_id,original_id:d.id});
                                     store.sync();
                                 }
 
@@ -100,6 +100,50 @@ Ext.define('MyMusicBox.controller.Singer', {
                         }
                     ]
                 });
+
+        actionSheet.setRecord(record);
+        Ext.Viewport.add(actionSheet);
+        actionSheet.show();
+    },
+
+    onPlayListItemTap: function(dataview, index, target, record, e, eOpts) {
+        console.log('onPlayListItemTap');
+        console.log(record.data);
+
+        var actionSheet = Ext.create('Ext.ActionSheet', {
+            items: [
+                {
+                    text: '播放',
+                    ui  : 'action',
+                    scope: this,
+                    handler: function(button, e, eOpts) {
+                        var store= Ext.getStore('Playlist'),
+                            ctl = this.getApplication().getController('Play');
+                        console.log(ctl);
+                        ctl.playASong(record);
+
+                        actionSheet.hide();
+                    }
+                },
+                {
+                    text: '删除',
+                    ui  : 'decline',
+                    handler: function(button, e, eOpts) {
+                        var store= Ext.getStore('Playlist'),
+                            record = actionSheet.getRecord();
+                        store.remove(record);
+                        store.sync();
+
+                        actionSheet.hide();
+                    }
+                },
+                {
+                    text: '取消',
+                    ui  : 'confirm',
+                    handler: function() {actionSheet.hide();}
+                }
+            ]
+        });
 
         actionSheet.setRecord(record);
         Ext.Viewport.add(actionSheet);

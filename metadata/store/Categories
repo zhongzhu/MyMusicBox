@@ -1,0 +1,46 @@
+{
+    "type": "Ext.data.TreeStore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "Categories",
+        "model": "Category",
+        "storeId": "Categories"
+    },
+    "name": "MyJsonTreeStore",
+    "designerId": "838a8ced-8ed1-4297-8033-de2a8b4a1e13",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "data/category.json"
+            },
+            "name": "MyAjaxProxy3",
+            "designerId": "88f27c78-0631-4881-a1d0-6d9d805d127e",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": null
+                    },
+                    "name": "MyJsonReader3",
+                    "designerId": "2294de9c-48b0-40d7-9860-0636d40d3aef"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,289 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "playview",
+        "designer|userClassName": "PlayView",
+        "layout": "vbox"
+    },
+    "name": "MyContainer",
+    "designerId": "dde9d466-bbd6-4ac5-9c0b-6ca35839e1d5",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout": "hbox",
+                "layout|flex": 1
+            },
+            "name": "MyContainer",
+            "designerId": "bc6abdb4-49a4-46be-8dda-d26f642eb9f3",
+            "cn": [
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 200,
+                        "padding": "5 5 5 5",
+                        "src": "resources/icons/disc.png",
+                        "width": 200
+                    },
+                    "name": "MyImg",
+                    "designerId": "9f7d73bb-5815-42bb-a676-73b58b92dcd6"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "layout": "vbox",
+                        "layout|flex": 1
+                    },
+                    "name": "MyContainer2",
+                    "designerId": "fc5b6759-b35e-4b72-a1e0-95c9207924ac",
+                    "cn": [
+                        {
+                            "type": "Ext.SegmentedButton",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowDepress": true
+                            },
+                            "name": "MySegmentedButton",
+                            "designerId": "940e2023-280a-44c3-9371-3968af96c834",
+                            "cn": [
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|uiInterfaceName": "action",
+                                        "iconCls": "shuffle",
+                                        "itemId": "loopButton",
+                                        "pressed": true,
+                                        "text": null,
+                                        "ui": "action"
+                                    },
+                                    "name": "MyButton4",
+                                    "designerId": "0052cf19-d556-48a9-99fe-1176d7347a7f"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Component",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 40
+                            },
+                            "name": "MyComponent2",
+                            "designerId": "794ae1e9-0736-4299-a7cd-48a2c038e3d4"
+                        },
+                        {
+                            "type": "Ext.SegmentedButton",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowDepress": true
+                            },
+                            "name": "MySegmentedButton1",
+                            "designerId": "27ffddf0-9b73-406d-bee8-2f4bf1ac7654",
+                            "cn": [
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|uiInterfaceName": "action",
+                                        "iconCls": "volume",
+                                        "itemId": "mutedButton",
+                                        "text": null,
+                                        "ui": "action"
+                                    },
+                                    "name": "MyButton4",
+                                    "designerId": "a8edf1a6-4128-4594-b78b-af61b9929c20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Component",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 40,
+                "html": "歌曲",
+                "itemId": "songName"
+            },
+            "name": "MyComponent",
+            "designerId": "fa3a13b2-eb00-45a2-8dca-344423ffd68c"
+        },
+        {
+            "type": "Ext.Component",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 40,
+                "html": "歌手",
+                "itemId": "songArtist"
+            },
+            "name": "MyComponent1",
+            "designerId": "2c6f2718-95e7-4249-b9e7-5341c1ae9759"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "container|pack": "center",
+                "height": 40,
+                "layout": "hbox"
+            },
+            "name": "MyContainer1",
+            "designerId": "9b92a24e-0d9c-4a01-b88c-349e41678805",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|uiInterfaceName": "plain",
+                        "iconCls": "rewind",
+                        "itemId": "prevButton",
+                        "text": null,
+                        "ui": "plain",
+                        "width": 80
+                    },
+                    "name": "MyButton",
+                    "designerId": "75127d41-1306-4b18-a590-2e9c177c90e9"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|uiInterfaceName": "plain",
+                        "iconCls": "play",
+                        "itemId": "playButton",
+                        "text": null,
+                        "ui": "plain",
+                        "width": 80
+                    },
+                    "name": "MyButton1",
+                    "designerId": "4847c34d-a745-45f0-a935-fdb474ab3003"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|uiInterfaceName": "plain",
+                        "iconCls": "stop",
+                        "itemId": "stopButton",
+                        "text": null,
+                        "ui": "plain",
+                        "width": 80
+                    },
+                    "name": "MyButton2",
+                    "designerId": "0481878d-53b8-420f-b938-a3582eb6c2ad"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|uiInterfaceName": "plain",
+                        "iconCls": "forward",
+                        "itemId": "nextButton",
+                        "text": null,
+                        "ui": "plain",
+                        "width": 80
+                    },
+                    "name": "MyButton3",
+                    "designerId": "55a34d57-e720-4480-86aa-c708655473d4"
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Slider",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 60,
+                "label": null
+            },
+            "name": "MySliderField",
+            "designerId": "bdbf4f82-095d-4ebf-ae6b-7e909e331f1f"
+        },
+        {
+            "type": "Ext.Audio",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "MyAudio",
+            "designerId": "311a80e5-e79a-4ca3-9369-88278f448a23"
+        }
+    ]
+}

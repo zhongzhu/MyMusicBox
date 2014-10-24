@@ -667,17 +667,21 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.viewport.WindowsPhone": [
     "Ext.viewport.WP"
   ],
+  "MyMusicBox.controller.Play": [],
   "MyMusicBox.controller.Singer": [],
   "MyMusicBox.model.Artist": [],
   "MyMusicBox.model.ArtistCategory": [],
+  "MyMusicBox.model.Category": [],
   "MyMusicBox.model.Playlist": [],
   "MyMusicBox.model.Song": [],
   "MyMusicBox.store.ArtistCategory": [],
   "MyMusicBox.store.Artists": [],
+  "MyMusicBox.store.Categories": [],
   "MyMusicBox.store.Playlist": [],
   "MyMusicBox.store.Songs": [],
   "MyMusicBox.view.ArtistsView": [],
   "MyMusicBox.view.MainView": [],
+  "MyMusicBox.view.PlayView": [],
   "MyMusicBox.view.SongsView": []
 });
 
@@ -1410,13 +1414,16 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.Ios": [],
   "Ext.viewport.Viewport": [],
   "Ext.viewport.WindowsPhone": [],
+  "MyMusicBox.controller.Play": [],
   "MyMusicBox.controller.Singer": [],
   "MyMusicBox.model.Artist": [],
   "MyMusicBox.model.ArtistCategory": [],
+  "MyMusicBox.model.Category": [],
   "MyMusicBox.model.Playlist": [],
   "MyMusicBox.model.Song": [],
   "MyMusicBox.store.ArtistCategory": [],
   "MyMusicBox.store.Artists": [],
+  "MyMusicBox.store.Categories": [],
   "MyMusicBox.store.Playlist": [],
   "MyMusicBox.store.Songs": [],
   "MyMusicBox.view.ArtistsView": [
@@ -1424,6 +1431,9 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "MyMusicBox.view.MainView": [
     "widget.mainview"
+  ],
+  "MyMusicBox.view.PlayView": [
+    "widget.playview"
   ],
   "MyMusicBox.view.SongsView": [
     "widget.songsview"

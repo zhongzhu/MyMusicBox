@@ -1,7 +1,7 @@
 <?php
 
 
-$a1 = array(array('id'=>1, 'artist'=>'林子祥' , 'artist_id'=>1 , 'name'=>'男儿当自强' , 'url'=>''),
+$a1 = array(array('id'=>1, 'artist'=>'林子祥' , 'artist_id'=>1 , 'name'=>'男儿当自强' , 'url'=>'mp3/欢乐颂.mp3'),
 			array('id'=>2, 'artist'=>'林子祥' , 'artist_id'=>1 , 'name'=>'真的汉子' , 'url'=>''),
 			array('id'=>3, 'artist'=>'林子祥' , 'artist_id'=>1 , 'name'=>'最爱是谁' , 'url'=>''));
 

@@ -24,21 +24,25 @@ Ext.application({
         'ArtistCategory',
         'Artist',
         'Song',
-        'Playlist'
+        'Playlist',
+        'Category'
     ],
     stores: [
         'ArtistCategory',
         'Artists',
         'Songs',
-        'Playlist'
+        'Playlist',
+        'Categories'
     ],
     views: [
         'MainView',
         'ArtistsView',
-        'SongsView'
+        'SongsView',
+        'PlayView'
     ],
     controllers: [
-        'Singer'
+        'Singer',
+        'Play'
     ],
     name: 'MyMusicBox',
 

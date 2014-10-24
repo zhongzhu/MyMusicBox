@@ -18,9 +18,11 @@ Ext.define('MyMusicBox.view.MainView', {
     alias: 'widget.mainview',
 
     requires: [
+        'MyMusicBox.view.PlayView',
         'Ext.navigation.View',
         'Ext.dataview.List',
         'Ext.XTemplate',
+        'Ext.dataview.NestedList',
         'Ext.tab.Bar'
     ],
 
@@ -45,23 +47,27 @@ Ext.define('MyMusicBox.view.MainView', {
                 ]
             },
             {
-                xtype: 'container',
-                title: '分类',
+                xtype: 'nestedlist',
                 iconCls: 'music',
-                itemId: 'tab2'
+                itemId: 'categoryView',
+                detailCard: {
+                    xtype: 'songsview'
+                },
+                store: 'Categories',
+                title: '分类'
             },
             {
                 xtype: 'list',
                 title: '播放列表',
                 iconCls: 'list',
-                itemId: 'playlistview',
+                itemId: 'playListView',
                 itemTpl: [
                     '<div>{name} ({artist})</div>'
                 ],
                 store: 'Playlist'
             },
             {
-                xtype: 'container',
+                xtype: 'playview',
                 title: '播放',
                 iconCls: 'play'
             }

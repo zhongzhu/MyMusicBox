@@ -7,25 +7,29 @@
     "codeClass": null,
     "userConfig": {
         "controllers": [
-            "Singer"
+            "Singer",
+            "Play"
         ],
         "models": [
             "ArtistCategory",
             "Artist",
             "Song",
-            "Playlist"
+            "Playlist",
+            "Category"
         ],
         "name": "MyMusicBox",
         "stores": [
             "ArtistCategory",
             "Artists",
             "Songs",
-            "Playlist"
+            "Playlist",
+            "Categories"
         ],
         "views": [
             "MainView",
             "ArtistsView",
-            "SongsView"
+            "SongsView",
+            "PlayView"
         ]
     },
     "name": "Application",

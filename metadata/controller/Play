@@ -1,0 +1,96 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Play"
+    },
+    "name": "MyController",
+    "designerId": "c8d63d90-be99-4c2c-a229-9e43fdb33fdd",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "audio",
+                "selector": "audio",
+                "xtype": "Ext.Audio"
+            },
+            "name": "audio",
+            "designerId": "3f545d74-a0a2-466e-b8ea-bc55e4b04ef6"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "songRecord"
+                ],
+                "fn": "playASong",
+                "implHandler": [
+                    "var me = this,",
+                    "    a = this.getAudio();",
+                    "a.setUrl(songRecord.data.url);",
+                    "me.getSongName().setHtml(songRecord.data.name);",
+                    "me.getSongArtist().setHtml(songRecord.data.artist);",
+                    "a.play();"
+                ]
+            },
+            "name": "playASong",
+            "designerId": "5ea01f3e-6c12-4bab-9072-1409195bab6c"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "playView",
+                "selector": "playview"
+            },
+            "name": "playView",
+            "designerId": "f5e30b8e-a486-47aa-81d8-c16a378c2c02"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "songName",
+                "selector": "#songName"
+            },
+            "name": "songName",
+            "designerId": "b55a97bf-d932-40a6-94e2-fa398db617ab"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "songArtist",
+                "selector": "#songArtist"
+            },
+            "name": "songArtist",
+            "designerId": "23a4772e-154b-42d7-a434-368749f82abd"
+        }
+    ]
+}
