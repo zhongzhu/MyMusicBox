@@ -1,0 +1,45 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Songs",
+        "model": "Song",
+        "storeId": "Songs"
+    },
+    "name": "MyJsonStore",
+    "designerId": "a15e49b0-7d5b-4bc7-9227-13f70b032ddd",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "php/songs.php"
+            },
+            "name": "MyAjaxProxy2",
+            "designerId": "8b276e7a-aa72-4b60-bca3-2521e9dd6d51",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "data"
+                    },
+                    "name": "MyJsonReader2",
+                    "designerId": "fe1b5f51-1706-4036-8c24-043188048a64"
+                }
+            ]
+        }
+    ]
+}

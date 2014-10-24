@@ -80,7 +80,7 @@
             "designerId": "7148fb0a-516c-4a93-9c4d-c35ecaeecb34"
         },
         {
-            "type": "Ext.Container",
+            "type": "Ext.dataview.List",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -88,11 +88,30 @@
             "codeClass": null,
             "userConfig": {
                 "iconCls": "list",
-                "itemId": "tab3",
+                "itemId": "playlistview",
+                "store": "Playlist",
                 "title": "播放列表"
             },
-            "name": "MyContainer2",
-            "designerId": "1a31a091-9dd3-42e8-9fea-1f1b9538b758"
+            "name": "MyList1",
+            "designerId": "34967910-18de-4568-948f-6e349d2f7718",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "itemTpl",
+                        "implHandler": [
+                            "<div>{name} ({artist})</div>"
+                        ]
+                    },
+                    "name": "itemTpl",
+                    "designerId": "26c4f71f-2f11-4d00-b5d6-ada7ba908cf6"
+                }
+            ]
         },
         {
             "type": "Ext.Container",

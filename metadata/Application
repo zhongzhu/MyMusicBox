@@ -11,16 +11,21 @@
         ],
         "models": [
             "ArtistCategory",
-            "Artist"
+            "Artist",
+            "Song",
+            "Playlist"
         ],
         "name": "MyMusicBox",
         "stores": [
             "ArtistCategory",
-            "Artists"
+            "Artists",
+            "Songs",
+            "Playlist"
         ],
         "views": [
             "MainView",
-            "ArtistsView"
+            "ArtistsView",
+            "SongsView"
         ]
     },
     "name": "Application",

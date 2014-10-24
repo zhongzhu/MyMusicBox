@@ -532,6 +532,17 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.layout.wrapper.BoxDock": [],
   "Ext.layout.wrapper.Dock": [],
   "Ext.layout.wrapper.Inner": [],
+  "Ext.log.Base": [],
+  "Ext.log.Logger": [],
+  "Ext.log.filter.Filter": [],
+  "Ext.log.filter.Priority": [],
+  "Ext.log.formatter.Default": [],
+  "Ext.log.formatter.Formatter": [],
+  "Ext.log.formatter.Identity": [],
+  "Ext.log.writer.Console": [],
+  "Ext.log.writer.DocumentTitle": [],
+  "Ext.log.writer.Remote": [],
+  "Ext.log.writer.Writer": [],
   "Ext.mixin.Bindable": [],
   "Ext.mixin.Filterable": [],
   "Ext.mixin.Mixin": [],
@@ -659,10 +670,15 @@ Ext.ClassManager.addNameAlternateMappings({
   "MyMusicBox.controller.Singer": [],
   "MyMusicBox.model.Artist": [],
   "MyMusicBox.model.ArtistCategory": [],
+  "MyMusicBox.model.Playlist": [],
+  "MyMusicBox.model.Song": [],
   "MyMusicBox.store.ArtistCategory": [],
   "MyMusicBox.store.Artists": [],
+  "MyMusicBox.store.Playlist": [],
+  "MyMusicBox.store.Songs": [],
   "MyMusicBox.view.ArtistsView": [],
-  "MyMusicBox.view.MainView": []
+  "MyMusicBox.view.MainView": [],
+  "MyMusicBox.view.SongsView": []
 });
 
 Ext.ClassManager.addNameAliasMappings({
@@ -1243,6 +1259,17 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.layout.wrapper.BoxDock": [],
   "Ext.layout.wrapper.Dock": [],
   "Ext.layout.wrapper.Inner": [],
+  "Ext.log.Base": [],
+  "Ext.log.Logger": [],
+  "Ext.log.filter.Filter": [],
+  "Ext.log.filter.Priority": [],
+  "Ext.log.formatter.Default": [],
+  "Ext.log.formatter.Formatter": [],
+  "Ext.log.formatter.Identity": [],
+  "Ext.log.writer.Console": [],
+  "Ext.log.writer.DocumentTitle": [],
+  "Ext.log.writer.Remote": [],
+  "Ext.log.writer.Writer": [],
   "Ext.mixin.Bindable": [],
   "Ext.mixin.Filterable": [],
   "Ext.mixin.Mixin": [],
@@ -1386,13 +1413,20 @@ Ext.ClassManager.addNameAliasMappings({
   "MyMusicBox.controller.Singer": [],
   "MyMusicBox.model.Artist": [],
   "MyMusicBox.model.ArtistCategory": [],
+  "MyMusicBox.model.Playlist": [],
+  "MyMusicBox.model.Song": [],
   "MyMusicBox.store.ArtistCategory": [],
   "MyMusicBox.store.Artists": [],
+  "MyMusicBox.store.Playlist": [],
+  "MyMusicBox.store.Songs": [],
   "MyMusicBox.view.ArtistsView": [
     "widget.artistsview"
   ],
   "MyMusicBox.view.MainView": [
     "widget.mainview"
+  ],
+  "MyMusicBox.view.SongsView": [
+    "widget.songsview"
   ]
 });
 

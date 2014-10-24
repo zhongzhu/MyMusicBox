@@ -22,15 +22,20 @@ Ext.Loader.setConfig({
 Ext.application({
     models: [
         'ArtistCategory',
-        'Artist'
+        'Artist',
+        'Song',
+        'Playlist'
     ],
     stores: [
         'ArtistCategory',
-        'Artists'
+        'Artists',
+        'Songs',
+        'Playlist'
     ],
     views: [
         'MainView',
-        'ArtistsView'
+        'ArtistsView',
+        'SongsView'
     ],
     controllers: [
         'Singer'

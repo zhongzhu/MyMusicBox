@@ -51,10 +51,14 @@ Ext.define('MyMusicBox.view.MainView', {
                 itemId: 'tab2'
             },
             {
-                xtype: 'container',
+                xtype: 'list',
                 title: '播放列表',
                 iconCls: 'list',
-                itemId: 'tab3'
+                itemId: 'playlistview',
+                itemTpl: [
+                    '<div>{name} ({artist})</div>'
+                ],
+                store: 'Playlist'
             },
             {
                 xtype: 'container',

@@ -40,18 +40,23 @@
     "viewOrderMap": {
         "view": [
             "6ff421e4-b183-4a75-a035-b579678217fa",
-            "fbcb67c7-40dc-4e17-ae8f-a2142a4adacd"
+            "fbcb67c7-40dc-4e17-ae8f-a2142a4adacd",
+            "bce21c41-7734-43c6-9728-869896851307"
         ],
         "store": [
             "b5745414-f4fa-48a9-9eb4-027ffe06884e",
-            "1a05bbd6-ab27-403e-90c7-9a8fdcfb9e0d"
+            "1a05bbd6-ab27-403e-90c7-9a8fdcfb9e0d",
+            "a15e49b0-7d5b-4bc7-9227-13f70b032ddd",
+            "ba635d50-56fe-44db-8325-dfe6c199b2b2"
         ],
         "controller": [
             "ff0d33c9-e754-498c-9df9-ff39ab489c73"
         ],
         "model": [
             "f330cfc4-6fe0-4c50-bd9c-7c775a49c54d",
-            "1862dc60-8be0-4b57-9275-96282ab9d92e"
+            "1862dc60-8be0-4b57-9275-96282ab9d92e",
+            "015e96dc-1399-4271-8e80-dd3d1806bef8",
+            "699aa0ab-277a-4205-9242-197db4f9b27e"
         ],
         "resource": [
             "70760bbc-9363-4de6-bb8d-935eb11d0b3e",

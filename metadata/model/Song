@@ -1,0 +1,82 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Song"
+    },
+    "name": "MyModel",
+    "designerId": "015e96dc-1399-4271-8e80-dd3d1806bef8",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id",
+                "type": "int"
+            },
+            "name": "field5",
+            "designerId": "9473ffbe-7c1d-4e7c-b10b-6c3289769d7f"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name"
+            },
+            "name": "field6",
+            "designerId": "42513a86-042c-4dec-ab39-7f752112d9fc"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "artist"
+            },
+            "name": "field7",
+            "designerId": "7e0913c1-7ddd-4e30-ae1e-1f65504237ca"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "artist_id",
+                "type": "int"
+            },
+            "name": "field8",
+            "designerId": "24e4df02-9516-44d3-862d-7efd8384b13a"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "url"
+            },
+            "name": "field9",
+            "designerId": "e0f4cc14-b584-4702-af9d-b897f6d0880a"
+        }
+    ]
+}

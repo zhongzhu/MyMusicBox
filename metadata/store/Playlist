@@ -1,0 +1,32 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "Playlist",
+        "model": "Playlist",
+        "storeId": "Playlist"
+    },
+    "name": "MyStore",
+    "designerId": "ba635d50-56fe-44db-8325-dfe6c199b2b2",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Sql",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "database": "MyMusic",
+                "table": "myplaylist"
+            },
+            "name": "MySqlProxy",
+            "designerId": "a148c164-063f-427f-8e3c-b7c174d73e71"
+        }
+    ]
+}
