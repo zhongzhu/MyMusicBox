@@ -18,13 +18,28 @@ Ext.define('MyMusicBox.controller.Play', {
 
     config: {
         refs: {
-            audio: {
-                selector: 'audio',
-                xtype: 'Ext.Audio'
-            },
+            audio: 'audio',
             playView: 'playview',
             songName: '#songName',
-            songArtist: '#songArtist'
+            songArtist: '#songArtist',
+            playButton: 'playview #playButtons #playButton'
+        },
+
+        control: {
+            "playButton": {
+                tap: 'onPlayButtonTap'
+            }
+        }
+    },
+
+    onPlayButtonTap: function(button, e, eOpts) {
+        console.log('onPlayButtonTap');
+        if(button.getIconCls()=='pause'){
+            this.getAudio().pause();
+            button.setIconCls('play');
+        } else {
+            this.getAudio().play();
+            button.setIconCls('pause');
         }
     },
 
@@ -34,6 +49,7 @@ Ext.define('MyMusicBox.controller.Play', {
         a.setUrl(songRecord.data.url);
         me.getSongName().setHtml(songRecord.data.name);
         me.getSongArtist().setHtml(songRecord.data.artist);
+        me.getPlayButton().setIconCls('pause');
         a.play();
     }
 

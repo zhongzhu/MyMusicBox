@@ -32,6 +32,20 @@
             "designerId": "7856a412-3cc3-4080-8939-22ea9f71f657"
         },
         {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "playView",
+                "selector": "playview"
+            },
+            "name": "playView",
+            "designerId": "6f9d4bc8-5ae2-403e-b6b9-2b806cf70860"
+        },
+        {
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",

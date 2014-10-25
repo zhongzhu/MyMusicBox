@@ -97,6 +97,7 @@ Ext.define('MyMusicBox.view.PlayView', {
             {
                 xtype: 'container',
                 height: 40,
+                itemId: 'playButtons',
                 layout: {
                     type: 'hbox',
                     align: 'center',
@@ -119,13 +120,6 @@ Ext.define('MyMusicBox.view.PlayView', {
                     },
                     {
                         xtype: 'button',
-                        itemId: 'stopButton',
-                        ui: 'plain',
-                        width: 80,
-                        iconCls: 'stop'
-                    },
-                    {
-                        xtype: 'button',
                         itemId: 'nextButton',
                         ui: 'plain',
                         width: 80,
@@ -138,7 +132,8 @@ Ext.define('MyMusicBox.view.PlayView', {
                 height: 60
             },
             {
-                xtype: 'audio'
+                xtype: 'audio',
+                hidden: true
             }
         ]
     }

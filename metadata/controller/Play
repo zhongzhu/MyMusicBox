@@ -21,34 +21,10 @@
             "userConfig": {
                 "ref": "audio",
                 "selector": "audio",
-                "xtype": "Ext.Audio"
+                "xtype": null
             },
             "name": "audio",
             "designerId": "3f545d74-a0a2-466e-b8ea-bc55e4b04ef6"
-        },
-        {
-            "type": "basicfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|params": [
-                    "songRecord"
-                ],
-                "fn": "playASong",
-                "implHandler": [
-                    "var me = this,",
-                    "    a = this.getAudio();",
-                    "a.setUrl(songRecord.data.url);",
-                    "me.getSongName().setHtml(songRecord.data.name);",
-                    "me.getSongArtist().setHtml(songRecord.data.artist);",
-                    "a.play();"
-                ]
-            },
-            "name": "playASong",
-            "designerId": "5ea01f3e-6c12-4bab-9072-1409195bab6c"
         },
         {
             "type": "controllerref",
@@ -91,6 +67,71 @@
             },
             "name": "songArtist",
             "designerId": "23a4772e-154b-42d7-a434-368749f82abd"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "playButton",
+                "selector": "playview #playButtons #playButton"
+            },
+            "name": "playButton",
+            "designerId": "3a2c4328-0142-4017-a401-d4d87ec23c69"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "songRecord"
+                ],
+                "fn": "playASong",
+                "implHandler": [
+                    "var me = this,",
+                    "    a = this.getAudio();",
+                    "a.setUrl(songRecord.data.url);",
+                    "me.getSongName().setHtml(songRecord.data.name);",
+                    "me.getSongArtist().setHtml(songRecord.data.artist);",
+                    "me.getPlayButton().setIconCls('pause');",
+                    "a.play();"
+                ]
+            },
+            "name": "playASong",
+            "designerId": "5ea01f3e-6c12-4bab-9072-1409195bab6c"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "playButton",
+                "designer|targetType": "Ext.Button",
+                "fn": "onPlayButtonTap",
+                "implHandler": [
+                    "console.log('onPlayButtonTap');",
+                    "if(button.getIconCls()=='pause'){",
+                    "    this.getAudio().pause();",
+                    "    button.setIconCls('play');",
+                    "} else {",
+                    "    this.getAudio().play();",
+                    "    button.setIconCls('pause');",
+                    "}"
+                ],
+                "name": "tap"
+            },
+            "name": "onPlayButtonTap",
+            "designerId": "98a47718-3f07-49e5-91ff-b9448d67e440"
         }
     ]
 }

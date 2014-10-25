@@ -24,7 +24,8 @@ Ext.define('MyMusicBox.controller.Singer', {
 
     config: {
         refs: {
-            singerNavView: 'mainview #singerNavView'
+            singerNavView: 'mainview #singerNavView',
+            playView: 'playview'
         },
 
         control: {
