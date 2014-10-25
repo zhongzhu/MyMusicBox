@@ -120,7 +120,7 @@
                 "fn": "onPlayButtonTap",
                 "implHandler": [
                     "console.log('onPlayButtonTap');",
-                    "if(button.getIconCls()=='pause'){",
+                    "if (button.getIconCls()=='pause') {",
                     "    this.getAudio().pause();",
                     "    button.setIconCls('play');",
                     "} else {",
@@ -132,6 +132,98 @@
             },
             "name": "onPlayButtonTap",
             "designerId": "98a47718-3f07-49e5-91ff-b9448d67e440"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "audio",
+                "designer|targetType": "Ext.Audio",
+                "fn": "onAudioTimeupdate",
+                "implHandler": [
+                    "var me = this,",
+                    "    playProgress = this.getPlayProgress(),",
+                    "    duration = media.getDuration();",
+                    "",
+                    "if (duration > 0) {",
+                    "    playProgress.setValue(time*100/duration);",
+                    "} else {",
+                    "    playProgress.setValue(1);",
+                    "}",
+                    ""
+                ],
+                "name": "timeupdate"
+            },
+            "name": "onAudioTimeupdate",
+            "designerId": "1ca59492-54d8-4c9a-ba04-ceaa7271fbb1"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "playProgress",
+                "selector": "sliderfield"
+            },
+            "name": "playProgress",
+            "designerId": "4fba30d2-e42c-44e5-8d29-f6c3419cf7ba"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "sliderfield",
+                "designer|targetType": "Ext.field.Slider",
+                "fn": "onDragStart",
+                "implHandler": [
+                    "var me = this,",
+                    "    playButton = me.getPlayButton();",
+                    "",
+                    "if (playButton.getIconCls() == 'pause') {",
+                    "    me.getAudio().pause();",
+                    "}"
+                ],
+                "name": "dragstart"
+            },
+            "name": "onDragStart",
+            "designerId": "284fca07-a501-4172-8769-195ff352b8b8"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "sliderfield",
+                "designer|targetType": "Ext.field.Slider",
+                "fn": "onDragEnd",
+                "implHandler": [
+                    "var me = this,",
+                    "    audio = me.getAudio(),",
+                    "    playButton =me.getPlayButton();",
+                    "",
+                    "audio.media.dom.currentTime = audio.getDuration()*value[0]/100;",
+                    "if (playButton.getIconCls() == 'pause') {",
+                    "    audio.play();",
+                    "}"
+                ],
+                "name": "dragend"
+            },
+            "name": "onDragEnd",
+            "designerId": "bd36a60a-7110-421d-9e7f-b83ea302c6d3"
         }
     ]
 }

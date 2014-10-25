@@ -22,24 +22,65 @@ Ext.define('MyMusicBox.controller.Play', {
             playView: 'playview',
             songName: '#songName',
             songArtist: '#songArtist',
-            playButton: 'playview #playButtons #playButton'
+            playButton: 'playview #playButtons #playButton',
+            playProgress: 'sliderfield'
         },
 
         control: {
             "playButton": {
                 tap: 'onPlayButtonTap'
+            },
+            "audio": {
+                timeupdate: 'onAudioTimeupdate'
+            },
+            "sliderfield": {
+                dragstart: 'onDragStart',
+                dragend: 'onDragEnd'
             }
         }
     },
 
     onPlayButtonTap: function(button, e, eOpts) {
         console.log('onPlayButtonTap');
-        if(button.getIconCls()=='pause'){
+        if (button.getIconCls()=='pause') {
             this.getAudio().pause();
             button.setIconCls('play');
         } else {
             this.getAudio().play();
             button.setIconCls('pause');
+        }
+    },
+
+    onAudioTimeupdate: function(media, time, eOpts) {
+        var me = this,
+            playProgress = this.getPlayProgress(),
+            duration = media.getDuration();
+
+        if (duration > 0) {
+            playProgress.setValue(time*100/duration);
+        } else {
+            playProgress.setValue(1);
+        }
+
+    },
+
+    onDragStart: function(sliderfield, sl, thumb, value, e, eOpts) {
+        var me = this,
+            playButton = me.getPlayButton();
+
+        if (playButton.getIconCls() == 'pause') {
+            me.getAudio().pause();
+        }
+    },
+
+    onDragEnd: function(sliderfield, sl, thumb, value, e, eOpts) {
+        var me = this,
+            audio = me.getAudio(),
+            playButton =me.getPlayButton();
+
+        audio.media.dom.currentTime = audio.getDuration()*value[0]/100;
+        if (playButton.getIconCls() == 'pause') {
+            audio.play();
         }
     },
 
