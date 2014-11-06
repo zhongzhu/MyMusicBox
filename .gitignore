@@ -2,7 +2,10 @@
 .sencha
 build
 touch
+bootstrap.js
 bootstrap.json
-touch/resources/sass/.sass-cache
+resources/sass/.sass-cache
+app.json
 app.json.*
 build.xml
+build.settings
