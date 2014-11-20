@@ -2,8 +2,8 @@
     "name": "MyMusicBox",
     "settings": {
         "cmd": {
+            "cmdVersion": "5.0.3.324",
             "license": "commercial",
-            "cmdVersion": "5.0.3.276",
             "frameworkVersion": "2.4.0.482"
         },
         "canvasControls": {
@@ -19,7 +19,7 @@
         "exportPath": "E:/xampp/htdocs/MyMusicBox3",
         "spacesToIndent": 4,
         "sdkPath": "",
-        "lineEnding": "CRLF",
+        "lineEnding": "LF",
         "genTimestamps": false,
         "cacheBust": false,
         "buildShouldOverwriteIndex": true,
@@ -33,7 +33,7 @@
         }
     },
     "xdsVersion": "3.1.0",
-    "xdsBuild": 1934,
+    "xdsBuild": 1943,
     "schemaVersion": 1,
     "upgradeVersion": 300000000007,
     "framework": "touch24",

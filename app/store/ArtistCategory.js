@@ -28,7 +28,7 @@ Ext.define('MyMusicBox.store.ArtistCategory', {
         storeId: 'ArtistCategory',
         proxy: {
             type: 'ajax',
-            url: 'php/artist_category.php',
+            url: 'data/artist_category.json',
             reader: {
                 type: 'json',
                 rootProperty: 'data'

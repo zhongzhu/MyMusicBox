@@ -22,7 +22,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "php/artist_category.php"
+                "url": "data/artist_category.json"
             },
             "name": "MyAjaxProxy",
             "designerId": "caa299bf-f839-4764-a825-304856637c14",
