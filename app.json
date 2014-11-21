@@ -14,12 +14,12 @@
       {
          "path": "app.js",
          "bundle": true,
-         "update": "delta"
+         "update": "full"
       }
    ],
    "css": [
       {
-         "update": "delta",
+         "update": "full",
          "platform": [
             "phone",
             "tablet",
